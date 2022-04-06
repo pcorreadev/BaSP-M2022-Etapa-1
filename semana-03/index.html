@@ -19,8 +19,8 @@
                     <img src="https://img.myloview.es/cuadros/hamburger-menu-icon-menu-icon-in-trendy-flat-style-isolated-on-white-background-for-your-web-site-design-app-logo-ui-vector-illustration-eps10-400-198409260.jpg" height="30px">
                 </button>
                 <div id="navlinks">
-                    <a href="tutorials.html">Tutorials</a>
-                    <a href="contact.html">Contact</a>
+                        <a id="tutorials" href="tutorials.html">Tutorials</a>
+                        <a href="contact.html">Contact</a>
                 </div>
                 <div class="searchbar">
                     <form action="search.php" method="post">
@@ -55,13 +55,18 @@
             Et quibusdam minima, cumque porro nobis atque inventore suscipit adipisci, iste, unde
             sequi delectus quo necessitatibus reprehenderitlo?
             </p>
-            <div .class="details"
-            <a class="paragraph" href="Contact.html" target="blank">✉ trackgenix@info.com</a>
-            <p class="paragraph"> ⌂ 1234 Somewhere Road #8254 Nashville, TN 00000-0000</p>
+            <div class="details">
+                <div id="contact-mail">
+                <p>✉ trackgenix@info.com</p>
+                </div>
+                <div id="adress">
+                <p > ⌂ 1234 Somewhere Road #8254 Nashville, TN 00000-0000</p>
+                </div>
+            </div>
             <a href="get-info.html"><button class="button-get-sys-info" >Get System information</button></a>
         </div>
     </aside>
-    <main>
+    <main id="main">
         <section>
             <div id="header">
                 <img id="logo" src= "https://cdn.worldvectorlogo.com/logos/tether.svg" alt="logo" height="100"></a>
@@ -120,25 +125,30 @@
                 </div>
             </div>
             <div id="container-about-us">
-                <div class="about-us-side">
+                <div id="about-us-side">
                     <h3 class="h3">About us</h3>
                     <h4 class="h4">Confidentiality agreements</h4>
                 </div>
-                <div id="img50">
-                <img src="https://7wdata.be/wp-content/uploads/2016/12/data-management-2016s-hot-trends-and-what-to-watch-in-2017.png" alt="touchpad" width="400">
-                </div>
+            
+             
                 <div id="about-right">
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam non minus quaerat
-                    aspernatur earum, ea laborum veritatis doloribus magni quisquam voluptates adipisci
-                    culpa ipsa. Quaerat adipisci velit magni vero
-                    </p>
-                <div id="about-right-down">
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam non minus quaerat
-                    aspernatur earum, <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDoixtLy-ItMGqrytvDksn0i9OTgIYOsL_X_RhDA87NlCUQ5ke4QQAQ3ZYBoOzcvPKqpc&usqp=CAU" alt="office laptops" width="100"> ea laborum veritatis doloribus magni quisquam voluptates adipisci
-                    culpa ipsa. Quaerat adipisci velit magni vero
-                    </p>
+                    <div id="about-us-img">
+                        <img src="https://7wdata.be/wp-content/uploads/2016/12/data-management-2016s-hot-trends-and-what-to-watch-in-2017.png" alt="touchpad" width="200">
+                    </div>
+                    <div id="p-70">
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam non minus quaerat
+                        aspernatur earum, ea laborum veritatis doloribus magni quisquam voluptates adipisci
+                        culpa ipsa. Quaerat adipisci velit magni vero
+                        </p>
+                        <div id="p-35">
+                            <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam non minus quaerat
+                            aspernatur earum,ea laborum veritatis doloribu
+                            </p> 
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDoixtLy-ItMGqrytvDksn0i9OTgIYOsL_X_RhDA87NlCUQ5ke4QQAQ3ZYBoOzcvPKqpc&usqp=CAU" alt="office laptops" width="120">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -168,50 +178,53 @@
                 </div>
             </section>
             <section id="bottom-nav">
-                <div id="bottom-list1">
-                    <h4>Products</h4>
-                    <ul>
-                        <li><a href="Functionalites.html">Functionalites</a></li>
-                        <li><a href="Download">Download</a></li>
-                        <li><a href="Integration">Integration</a></li>
-                        <li><a href="Extras.html">Extras</a></li>
-                    </ul>
-                </div>
-                <div id="bottom-list2">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="Information.html">Informatio</a></li>
-                        <li><a href="Clients.html">Clients</a></li>
-                        <li><a href="Resources.html">Resources</a></li>
-                        <li><a href="Blog.html">Blog</a></li>
-                    </ul>
-                </div>
-                <div id="bottom-list3">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="Help.html">Help</a></li>
-                        <li><a href="Tutorials.html">Tutorials</a></li>
-                        <li><a href="API.html">API</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                    </ul>
+                <div id="container-list">
+                    <div id="bottom-list1">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="Functionalites.html">Functionalites</a></li>
+                            <li><a href="Download">Download</a></li>
+                            <li><a href="Integration">Integration</a></li>
+                            <li><a href="Extras.html">Extras</a></li>
+                        </ul>
+                    </div>
+                    <div id="bottom-list2">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="Information.html">Informatio</a></li>
+                            <li><a href="Clients.html">Clients</a></li>
+                            <li><a href="Resources.html">Resources</a></li>
+                            <li><a href="Blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div id="bottom-list3">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="Help.html">Help</a></li>
+                            <li><a href="Tutorials.html">Tutorials</a></li>
+                            <li><a href="API.html">API</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </main>
         <footer>
             <div id="footer">
                 <a href="https://uy.linkedin.com/company/Trackgenix">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEP6_ZqUdItJUMNAiUfH-ytlPuseYnOrLhNp8lPl6ViB_O1-Tz4n3jwbPlVkirF3Y3QU&usqp=CAU" alt="linkedin logo"></a>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEP6_ZqUdItJUMNAiUfH-ytlPuseYnOrLhNp8lPl6ViB_O1-Tz4n3jwbPlVkirF3Y3QU&usqp=CAU" alt="linkedin logo" width="30"></a>
                 <a href="https://twitter.com/Trackgenix">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS73k3dFT_EfG0rqnbaKS2PxNOc1YjJjVWnY6-IaeAW9z2ITGbY1RQXqG9WhJAtgSgdsg0&usqp=CAU" alt="twitter logo"></a>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS73k3dFT_EfG0rqnbaKS2PxNOc1YjJjVWnY6-IaeAW9z2ITGbY1RQXqG9WhJAtgSgdsg0&usqp=CAU" alt="twitter logo" width="30"></a>
                 <a href="https://www.facebook.com/Trackgenix/">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZKT7Yleym993SA5GMZxdYhwHwV09j8f9yUP1NZKIBduaz9Mogz77BYsLnht0-0xHnI0&usqp=CAU" alt="facebook logo"></a>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZKT7Yleym993SA5GMZxdYhwHwV09j8f9yUP1NZKIBduaz9Mogz77BYsLnht0-0xHnI0&usqp=CAU" alt="facebook logo" width="30"></a>
                 <a href="https://www.instagram.com/Trackgenix/?hl=es">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTULUhZjZ8Y88PCtERA09YDloaWTCAEkS9-Q&usqp=CAU" alt="instagram logo" width="50"></a>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTULUhZjZ8Y88PCtERA09YDloaWTCAEkS9-Q&usqp=CAU" alt="instagram logo" width="60"></a>
                 <a href="https://github.com/Trackgenix/">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTFSIO_dsJJiOX3Sntwxpw6lUIJKI0ueBlRpcQ3q57xVOw4-bCAQ2eX0v_5v2sf5CIiNA&usqp=CAU" alt="github logo"></a>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTFSIO_dsJJiOX3Sntwxpw6lUIJKI0ueBlRpcQ3q57xVOw4-bCAQ2eX0v_5v2sf5CIiNA&usqp=CAU" alt="github logo" width="20"></a>
             </div>
-            <div>
-                <p id="trademark">Montevideo Uruguay Copyright Radium Rocket. All rights reserved</p>
+            <div class="footer-montevideo">
+                <p id="green-txt">Montevideo Uruguay </p>
+                <p class="trademark">Montevideo Uruguay © Radium Rocket. All rights reserved</p>
             </div>
         <footer>
     </html>
