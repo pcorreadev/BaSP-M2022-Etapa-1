@@ -27,7 +27,7 @@ Created HTML only landing site from previous teamwork design in Figma
 
 Added styling to the HTML with CSS
 
-## Week 03
+## Week 04
 
 Made site responsive using Flexbox
 
