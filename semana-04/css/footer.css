@@ -1,0 +1,32 @@
+#footer{
+    margin-left: 600px;
+    display: inline-block;
+    width: 40%;
+    height: 70px;
+    margin-top: 20px;
+}
+
+#footer img{
+    width: 4%;
+    margin-left: 50px;
+    display: inline-block;
+ }
+
+#green-txt{
+    color: #49A37B;
+    margin-left: 150px;
+    padding: 10px;
+}
+
+
+.footer-montevideo{
+    margin-left: 600px;
+    font-size: 25px;
+}
+
+.trademark{
+    display: inline-block;
+    width: 100%; 
+    padding-right: 200px; 
+    color: #000000;
+}

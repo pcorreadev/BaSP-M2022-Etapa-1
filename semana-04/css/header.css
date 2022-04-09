@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+body{
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Roboto', sans-serif; 
+    color: inherit; 
+}
+
+
+#header {
+    margin-top: 100px;
+    margin-left: 500px;
+}  
+
+
+#navbar{
+    width: 100%;
+    height: 72px;
+    background-color: #50A780;
+}
+
+#container01{
+    display: inline-block;
+    left: 0px;
+    padding: 8px;
+    background: transparent;
+    border: none;
+}
+
+#burguer{
+    left: 1px;
+    height: 30px;
+    border: none;
+    background: transparent;
+}
+
+#navlinks{
+    position: relative;
+    display: inline-block;
+    left: 30%;
+    padding: 5px;
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;   
+}
+
+#tutorials{
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 8px 20px;
+    margin-top: 10px;
+    border-right: 1px solid #000000;
+ }
+
+.search-button{
+    position: relative;
+    display: inline-block;
+    top: 6px;
+    right: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.buttons{
+    display: inline;
+    top: 4px;
+    margin-left: 500px;
+    border: none;
+    outline: none;
+}
+
+
+.searchbar{
+    position: relative;
+    display: inline-block;
+    left: 40%;
+    margin-bottom: 12px;
+}
+
+.button-login{
+    width: 190px;
+    height: 51px;
+    padding: 0px;
+    background-color: #FFFFFF;
+    font-size: 24px;
+    border-radius: 200px;
+    border: none;
+}
+
+.button-signup{
+    width: 190px;
+    height: 51px;
+    padding: 0px;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    border-radius: 200px;
+    font-size: 24px;
+    border: none;
+}
+
+
+
+.searchfield{
+    display: inline-block;
+    width: 519px;
+    height: 51px;
+    left: 20px;
+    padding: 12px;
+    background-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    border-radius: 200px;
+    outline: none;
+    border: none;
+}
