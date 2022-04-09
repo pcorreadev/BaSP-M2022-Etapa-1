@@ -27,7 +27,9 @@ Created HTML only landing site from previous teamwork design in Figma
 
 Added styling to the HTML with CSS
 
+## Week 03
 
+Made site responsive using Flexbox
 
 
 ![trackgenix](https://user-images.githubusercontent.com/71953662/160427119-93cd7e39-fcd9-41fa-8c1c-ee5b32c0d70d.PNG)
