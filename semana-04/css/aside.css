@@ -1,16 +1,31 @@
+@media only screen and (max-width: 1024px){
 
-aside{
-    position: absolute;
-    display: inline-block;
-    top: 72px;
-    width: 20%;
-    height: 1220px;
+.aside-class{
+    display: none;
+}
+}
+
+
+@media only screen and (min-width: 1024px){
+
+.main-wrapper{
+    display: flex;
+}
+
+.main-class{
+    flex-basis: 70%;
+}
+
+.aside-class{
+    flex-basis: 20%;
     padding: 10px;
     background: linear-gradient(180deg, rgb(80 167 128) 0%, rgb(79 167 128) 60%, rgb(255 255 255) 100%);
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .sidebar-label{
-    display: inline-block;
     width: 65%;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -19,7 +34,6 @@ aside{
 }
 
 .ul-menu {
-    display: inline-block;
     width: 180px;
     margin: 10px;
     border: none;
@@ -36,6 +50,21 @@ aside{
     font-size: 25px;
 }
 
+
+.contact-us{
+    margin-top: 20%;
+}
+
+
+.paragraph{
+    margin-top: 20%;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+}
+
 .details{
     padding: 15px;
     margin-top: 200px;
@@ -48,29 +77,6 @@ aside{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.paragraph{
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 25px;
-}
-
-.button-get-sys-info{
-    width: 80%;
-    height: 47px;
-    padding: 20px, 10px, 20px, 10px;
-    margin-left: 12px;
-    background-color: #49A37B; 
-    font-size: 22px;
-    border-radius: 5px;
-    color: white;
-}
-
-#contact-us{
-    position: relative;
-    top: 200px;
-}
 
 #contact-mail{
     margin-top: 20px;
@@ -83,3 +89,15 @@ aside{
     margin-top: 20px;
 }
 
+
+.button-get-sys-info{
+    width: 90%;
+    padding: 2%, 1%, 2%, 1%;
+    margin-left: 12px;
+    background-color: #49A37B; 
+    font-size: 1.2vw;
+    border-radius: 5px;
+    color: white;
+}
+
+}
