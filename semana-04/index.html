@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <div id="navbar">
+        <div class="navbar">
             <div class="wrap-burguer">
                 <button class="burguer">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png">
@@ -26,14 +26,14 @@
                     <a href="tutorials.html">Tutorials</a>
                     <a href="contact.html">Contact</a>
             </div>
+            <div class="search-icon">
+                <img src="https://credicelu.net/tienda/wp-content/uploads/2019/10/lupa-blanca.png">
+            </div>
             <div class="searchfield">
                 <div class="flex">
                     <form action="search.php" method="post">
                     <input type="search" name="search" placeholder="Search here!" class="search-blank" required>
                     </form>
-                    <div class="search-icon">
-                        <button class="search-icon" type="submit"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Google_Magnifying_Glass.svg/2048px-Google_Magnifying_Glass.svg.png"></button>
-                    </div>
                 </div>  
             </div>
             <div class="buttons">
@@ -42,9 +42,8 @@
             </div>
         </div>
     </header>
-    <div class="main-wrapper">
-        <div class="aside-class">
-            <aside>
+    <div class="body-wrapper">
+            <aside class="aside-class">
                 <div>
                     <label class="sidebar-label">Menu</label>
                     <ul class="ul-menu">
@@ -72,9 +71,7 @@
                     <a href="get-info.html"><button class="button-get-sys-info" >Get System information</button></a>
                 </div>
             </aside>
-        </div>
-        <div class="main-class">
-            <main id="main">
+            <main class="main">
                 <div>
                     <div class="header">
                         <img class="logo" src= "https://cdn.worldvectorlogo.com/logos/tether.svg" alt="logo"></a>
@@ -139,7 +136,7 @@
                                 </ul>
                             </div>
                         </div>
-                    <div>
+                    </div>
                 </div>
                 <div>
                     <div class="wrapper-about">
@@ -171,8 +168,7 @@
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDoixtLy-ItMGqrytvDksn0i9OTgIYOsL_X_RhDA87NlCUQ5ke4QQAQ3ZYBoOzcvPKqpc&usqp=CAU" alt="office laptops">
                             </div>
                         </div>
-                    </div>
-                    
+                    </div>    
                 </section>
                 <section class="submit-container">
                     <h3 class="h3">Get system information</h3>
@@ -189,13 +185,11 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="label">
-                                            <label>Email:</label>
-                                        </div>
                                         <div>
+                                            <label class="label">Email:</label>
                                             <input type="email"name="email" placeholder="Write your email" class="border" required>
                                         </div>
-                                    </li>
+                                    <li>
                                     <li>
                                         <div class="label">
                                             <label>Select contact area:</label>
@@ -219,9 +213,9 @@
                         </div>
                     </div>
                 </section>
-                <section id="bottom-nav">
-                        <div id="container-list">
-                            <div class="bottom-list1">
+                <section class="bottom-nav">
+                        <div class="container-list">
+                            <div class="bottom-list">
                                 <h4>Products</h4>
                                 <ul>
                                     <li><a href="Functionalites.html">Functionalites</a></li>
@@ -230,7 +224,7 @@
                                     <li><a href="Extras.html">Extras</a></li>
                                 </ul>
                             </div>
-                            <div class="bottom-list2">
+                            <div class="bottom-list">
                                 <h4>Company</h4>
                                 <ul>
                                     <li><a href="Information.html">Informatio</a></li>
@@ -239,7 +233,7 @@
                                     <li><a href="Blog.html">Blog</a></li>
                                 </ul>
                             </div>
-                            <div class="bottom-list3">
+                            <div class="bottom-list">
                                 <h4>Support</h4>
                                 <ul>
                                     <li><a href="Help.html">Help</a></li>
@@ -252,33 +246,33 @@
                 </section>
             </main>
         </div>
-    </div>
-    <footer>
-        <div id="footer">
-            <div class="thumb-logo">
-                <a href="https://uy.linkedin.com/company/Trackgenix">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEP6_ZqUdItJUMNAiUfH-ytlPuseYnOrLhNp8lPl6ViB_O1-Tz4n3jwbPlVkirF3Y3QU&usqp=CAU" alt="linkedin logo"></a>
+        <footer>
+            <div class="footer">
+                <div class="thumb-logo">
+                    <a href="https://uy.linkedin.com/company/Trackgenix">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEP6_ZqUdItJUMNAiUfH-ytlPuseYnOrLhNp8lPl6ViB_O1-Tz4n3jwbPlVkirF3Y3QU&usqp=CAU" alt="linkedin logo"></a>
+                </div>
+                <div class="thumb-logo">
+                    <a href="https://twitter.com/Trackgenix">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS73k3dFT_EfG0rqnbaKS2PxNOc1YjJjVWnY6-IaeAW9z2ITGbY1RQXqG9WhJAtgSgdsg0&usqp=CAU" alt="twitter logo" ></a>
+                </div>
+                <div class="thumb-logo">
+                    <a href="https://www.facebook.com/Trackgenix/">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZKT7Yleym993SA5GMZxdYhwHwV09j8f9yUP1NZKIBduaz9Mogz77BYsLnht0-0xHnI0&usqp=CAU" alt="facebook logo"></a>
+                </div>
+                <div class="thumb-logo">
+                    <a href="https://www.instagram.com/Trackgenix/?hl=es">
+                    <img src="https://stgeorgesbatterypoint.org/wp-content/uploads/2021/06/instagram-circle-icon-png-4.png" alt="instagram logo" width="60"></a>
+                </div>
+                <div class="thumb-logo">
+                    <a href="https://github.com/Trackgenix/">
+                    <img src="https://pngimg.com/uploads/github/github_PNG40.png" alt="github logo" width="20"></a>
+                </div>
             </div>
-            <div class="thumb-logo">
-                <a href="https://twitter.com/Trackgenix">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS73k3dFT_EfG0rqnbaKS2PxNOc1YjJjVWnY6-IaeAW9z2ITGbY1RQXqG9WhJAtgSgdsg0&usqp=CAU" alt="twitter logo" ></a>
+            <div class="footer-montevideo">
+                <p class="green-txt">Montevideo Uruguay </p>
+                <p class="trademark">Copyright Radium Rocket © All rights reserved</p>
             </div>
-            <div class="thumb-logo">
-                <a href="https://www.facebook.com/Trackgenix/">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZKT7Yleym993SA5GMZxdYhwHwV09j8f9yUP1NZKIBduaz9Mogz77BYsLnht0-0xHnI0&usqp=CAU" alt="facebook logo"></a>
-            </div>
-            <div class="thumb-logo">
-                <a href="https://www.instagram.com/Trackgenix/?hl=es">
-                <img src="https://stgeorgesbatterypoint.org/wp-content/uploads/2021/06/instagram-circle-icon-png-4.png" alt="instagram logo" width="60"></a>
-            </div>
-            <div class="thumb-logo">
-                <a href="https://github.com/Trackgenix/">
-                <img src="https://pngimg.com/uploads/github/github_PNG40.png" alt="github logo" width="20"></a>
-            </div>
-        </div>
-        <div class="footer-montevideo">
-            <p id="green-txt">Montevideo Uruguay </p>
-            <p class="trademark">Copyright Radium Rocket © All rights reserved</p>
-        </div>
-    <footer>
-    </html>
+        <footer>
+    </body>
+</html>

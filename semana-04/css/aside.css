@@ -9,12 +9,14 @@
 
 @media only screen and (min-width: 1024px){
 
-.main-wrapper{
+.body-wrapper{
     display: flex;
+    margin: 0%;
+    justify-content: space-between
 }
 
 .main-class{
-    flex-basis: 70%;
+    flex-basis: 80%;
 }
 
 
@@ -29,11 +31,11 @@
 }
 
 .sidebar-label{
-    width: 65%;
     padding-bottom: 20px;
     margin-bottom: 20px;
     font-size: 30px;
     border-bottom: 2px solid #ED2626;
+    margin-left: 10%;
 }
 
 .ul-menu {
