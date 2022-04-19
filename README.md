@@ -31,6 +31,12 @@ Added styling to the HTML with CSS
 
 Made site responsive using Flexbox
 
+## Week 05
+
+Javascript practice exercises:
+Variables and operators, strings, arrays, if else, for, functions.
+
+
 
 ![trackgenix](https://user-images.githubusercontent.com/71953662/160427119-93cd7e39-fcd9-41fa-8c1c-ee5b32c0d70d.PNG)
 
