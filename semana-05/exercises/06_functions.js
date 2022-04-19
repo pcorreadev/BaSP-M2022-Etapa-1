@@ -28,8 +28,7 @@ console.log('Exercise 6b: ', sum6b('e', 5));
 // 6c Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si es un número entero.
 
  function validateInteger(num1) {
-    return (Number.isInteger(num1) && !isNaN);
-
+    return (Number.isInteger(num1) && !isNaN(num1));
  }
 
  console.log ('Exercise 6c: ', validateInteger(3));
