@@ -3,8 +3,8 @@
 
 var animals = ["dog", "cat", "turtle", "parrot", "tiger"];
 
-for (var counter = 0; counter <= 4; counter++) {
-    alert (animals [counter]);
+for (var i = 0; i < animals.length; i++) {
+    alert (animals [i]);
 }
 
 // 5b Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada palabra modificada.
@@ -17,10 +17,13 @@ for (var i = 0; i < animals.length; i++) {
 // 5c Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo con un bucle for para ir
 //  guardando cada palabra dentro de la variable sentence. Al final mostrar una única alerta con la cadena completa.
 
-for (var counter = 0; counter <= 4; counter++) {
-    var sentence = animals.toString(counter);
-    alert (sentence);
+var sentence = ""
+for (var i = 0; i < animals.length; i++) {
+    var sentence = animals.toString(i);
+    
 }
+alert (sentence);
+
 
 // 5d Crear una array vacío y con un bucle for de 10 repeticiones. Llenar el array con el número de la repetición, es decir que al final de
 //  la ejecución del bucle for debería haber 10 elementos dentro del array, desde el número 0 hasta al número 9. Mostrar por la consola del navegador
