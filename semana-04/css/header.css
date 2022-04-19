@@ -1,17 +1,16 @@
 *{
+    box-sizing: border-box;
+    margin: 0 auto;
+    color: inherit;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    color: inherit;
-    margin: 0 auto;
-    box-sizing: border-box;
 }
 
 body{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif; 
     color: inherit;
-    width: 100%;
-    
+    width: 100%;   
 }
 
 header{
@@ -24,14 +23,12 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: #50A780;
-    width: 100%;
-        
+    width: 100%;       
 }
 
 .wrap-burguer{
     flex-basis: 4%;
     height: fit-content;
-
 }
 
 .burguer{
@@ -40,7 +37,6 @@ header{
     background-color: transparent;
     background: none;
     text-decoration: none;
-
 }
 
 .burguer img{
@@ -52,36 +48,21 @@ header{
     background-color: transparent;
     background: none;
     text-decoration: none;
-
 }
 
 .navlinks{
-    display: flex;
-    justify-content: space-between;
-    color: #000000;
-    font-size: 1.5vw;
-    text-decoration: none;   
-}
+    display: none;
+ 
+    }
 
 .navlinks a{
     border-right: 1px solid #000000;
     flex-basis: 40%;
     padding: 4%;
- }
+}
 
 .searchfield{
-    display: flex;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2vw;
-    line-height: 2vw;
-    border-radius: 200px;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    width: 15%;
+    display: none;
 }
 
 .search-icon{
@@ -90,7 +71,6 @@ header{
     background-color: transparent;
     background: none;
     text-decoration: none;
-
 }
 
 .search-icon img{
@@ -100,7 +80,6 @@ header{
     min-width: 20px;
 }
 
-
 .flex{
     display: flex;
     justify-content: space-between;
@@ -108,8 +87,8 @@ header{
     border: none;
     text-decoration: none;
     width: 100%;
-
 }
+
 .search-button{
     background: transparent;
     border: none;
@@ -139,18 +118,16 @@ header{
     padding: 0.5%;
     height: 100%;
     width: 30%;
-
 }
 
 .buttons a{
-    border: none;
-    outline: none;
     width: 100%;
     height: 100%;
     flex: 0 0 30%;
     margin-left: 10%;
     margin-right: 10%;
-
+    border: none;
+    outline: none;
 }
 
 .button-login{
@@ -159,30 +136,40 @@ header{
     border-radius: 200px;
     border: none;
     width: 100%;
-  
 }
 
-
-@media only screen and (max-width: 1023px){
-
-.navlinks{
-    display: none;
- 
-    }
-
-
-.searchfield{
-    display: none;
-
-}
-
-}
-
-@media only screen and (min-width: 760px){
+@media only screen and (min-width: 768px){
 
 .search-icon{
     display: none;
 
+}
+
+}
+   
+@media only screen and (min-width: 1024px){
+
+.navlinks{
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+    font-size: 1.5vw;
+    text-decoration: none;   
+}
+
+.searchfield{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 2vw;
+    border-radius: 200px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    width: 15%;
 }
 
 }
