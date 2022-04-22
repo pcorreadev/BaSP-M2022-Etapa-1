@@ -34,8 +34,12 @@ Made site responsive using Flexbox
 ## Week 05
 
 Javascript practice exercises:
-Variables and operators, strings, arrays, if else, for, functions.
+Variables and operators, strings, arrays, if else, for, functions
 
+## Week 06
+
+Made the site dynamic using Javascript DOM.
+Added Sign up and Login functionalities.
 
 
 ![trackgenix](https://user-images.githubusercontent.com/71953662/160427119-93cd7e39-fcd9-41fa-8c1c-ee5b32c0d70d.PNG)

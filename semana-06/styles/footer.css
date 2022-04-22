@@ -1,0 +1,39 @@
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+    height: 70px;
+    margin: 2%;
+    padding: 5px;
+    justify-content: center;
+}
+
+.thumb-logo {
+    width: 10%;
+    flex-basis: 6%;
+}
+
+.thumb-logo img{
+    width: 40px;
+    margin: 10px; 
+}
+
+.footer-montevideo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3vw;
+}
+
+.green-txt{
+    color: #49A37B;
+    padding: 10px;
+    align-self: center;
+}
+
+.trademark{
+    color: #000000;
+    align-self: center;
+    padding: 10px;
+}
+
