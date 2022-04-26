@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/sign-up.css">
+        <link rel="stylesheet" href="../styles/aside.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>Trackgenix</title>
+    </head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="wrap-burguer">
+                <button class="burguer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png">
+                </button>
+            </div>   
+            <div class="navlinks">
+                    <a href="tutorials.html">Tutorials</a>
+                    <a href="contact.html">Contact</a>
+            </div>
+            <div class="searchfield">
+                <div class="form">
+                    <form action="search.php" method="post">
+                    <input type="search" name="search" placeholder="Search here!" class="search-blank" required>
+                    </form>
+                </div>
+                <div class="lupa-searchblank">
+                <img src="https://credicelu.net/tienda/wp-content/uploads/2019/10/lupa-blanca.png">
+                </div> 
+            </div>
+            <div class="buttons">
+                <a href ="login.html"><button class="button-login">Login</button></a>
+                <a href="signup.html"><button class="button-login">Signup</button></a>
+            </div>
+            <div class="search-icon">
+                <img src="https://credicelu.net/tienda/wp-content/uploads/2019/10/lupa-blanca.png">
+            </div>
+        </div>
+    </header>
+    <body>
+        <main>
+            <div class="header">
+                <img class="logo" src= "https://cdn.worldvectorlogo.com/logos/tether.svg" alt="logo"></a>
+                <div class="titles">
+                    <h1>TRACKGENIX</h1>
+                    <h2>Data Management</h2>
+                </div>
+            </div>
+            <section class="submit-container">
+                <h3 class="center-title">Login</h3>
+                <div class="form-container-50">
+                    <div class="form-columns">
+                        <form class="form" action="submit.php" method="post">
+                            <ul class="flex-outer">
+                                <li class= "validation-form">
+                                    <label class="label">Email:</label>
+                                    <input type="email" name="email" id="email" placeholder="Write your email">
+                                    <p>error</p>
+                                </li>
+                                <div class= "validation-form">
+                                    <label class="label">Password:</label>
+                                    <input type="text" name="password" id="password" placeholder="Write your password">
+                                    <p>error</p>
+                                </div>
+                                <li class="list-flex">
+                                    <div class="label-50">
+                                            <input type="checkbox" checked>
+                                            <label>Remember me</label>
+                                    </div>
+                                    <div class="label-50">
+                                        <label>Forgot your password?</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="center">
+                        <a><button type="button" id="buttonlogin">
+                            <span class="button-text">Login</span>
+                        </button>
+                        </a>
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="thumb-logo">
+                    <a href="https://uy.linkedin.com/company/Trackgenix">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEP6_ZqUdItJUMNAiUfH-ytlPuseYnOrLhNp8lPl6ViB_O1-Tz4n3jwbPlVkirF3Y3QU&usqp=CAU"
+                    alt="linkedin logo"></a>
+                </div>
+                <div class="thumb-logo">
+                    <a href="https://twitter.com/Trackgenix">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS73k3dFT_EfG0rqnbaKS2PxNOc1YjJjVWnY6-IaeAW9z2ITGbY1RQXqG9WhJAtgSgdsg0&usqp=CAU"
+                    alt="twitter logo" ></a>
+                </div>
+                <div class="thumb-logo">
+                    <a href="https://www.facebook.com/Trackgenix/">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZKT7Yleym993SA5GMZxdYhwHwV09j8f9yUP1NZKIBduaz9Mogz77BYsLnht0-0xHnI0&usqp=CAU"
+                    alt="facebook logo"></a>
+                </div>
+                <div class="thumb-logo">
+                    <a href="https://www.instagram.com/Trackgenix/?hl=es">
+                    <img src="https://stgeorgesbatterypoint.org/wp-content/uploads/2021/06/instagram-circle-icon-png-4.png"
+                     alt="instagram logo"></a>
+                </div>
+                <div class="thumb-logo">
+                    <a href="https://github.com/Trackgenix/">
+                    <img src="https://pngimg.com/uploads/github/github_PNG40.png"
+                     alt="github logo"></a>
+                </div>
+            </div>
+            <div class="footer-montevideo">
+                <p class="green-txt">Montevideo Uruguay </p>
+                <p class="trademark">Copyright Radium Rocket © All rights reserved</p>
+            </div>
+        </footer>
+        <script src = "../javascript/login.js"></script>
+    </body>
+</html>

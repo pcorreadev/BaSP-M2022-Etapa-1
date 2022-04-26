@@ -167,7 +167,7 @@ header{
         align-content: center;
         flex-basis: 40%;
         font-size: 1.5vw;
-        text-align: center;
+        text-align: left;
     }
 
     .lupa-searchblank {

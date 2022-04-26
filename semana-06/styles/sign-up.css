@@ -1,0 +1,108 @@
+.center-title{
+    align-self: center;
+    font-size: 3vw;
+    font-weight: 900;
+    color: #373867;
+}
+
+.form-container-50{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+
+}
+.wrong-input{
+    color: #F13312;
+    padding-top: 3%;
+    font-weight: 900;
+    margin-bottom: 3%;
+}
+
+
+.flex-outer{
+    display: flex;
+    flex-direction: column;
+}
+.list-flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 5%;
+}
+
+.label-50{
+    margin: 3%;
+    flex-basis: 50%;
+    color: #373867;
+}
+
+.label-50 label{
+    color: #373867;
+    font-size: 1.8vw;
+    width: 100%;
+    font-weight: 900;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-top: 10%;
+}
+
+.button {
+    display: flex;
+    height: 50px;
+    padding: 0;
+    background-color: #AACE9B;
+    border: none;
+    outline: none;
+    border-radius: 200px;
+    overflow: hidden;
+    font-size: 2vw; 
+}
+
+.button-text{
+  justify-content: center;
+  padding: 0 50px;
+  color: #505168;
+  height: 100%;
+  font-weight: 900;
+  text-align: center;
+}
+
+  
+.validation-form {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+}
+
+.validation-form input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	font-family: inherit;
+	font-size: 2vw;
+	padding: 10px;
+	width: 100%;
+}
+
+.validation-form.success input {
+	border-color: #2ecc71;
+}
+
+.validation-form.error input {
+	border-color: #e74c3c;
+}
+
+.validation-form p {
+	color: #e74c3c;
+	visibility: hidden;
+    margin-top: 2%;
+}
+
+.validation-form.error p {
+	visibility: visible;
+}

@@ -19,6 +19,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10%;
 }  
 
 .presentation{
@@ -159,7 +160,9 @@ p {
 .form-container{
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    margin: auto;
 }
 
 .form-columns{
@@ -167,9 +170,10 @@ p {
 }
 
 .border{
-    border: 1px solid #7B61FF;
+    border: 1px solid #505168;
     border-radius: 4px;
     padding: 5%;
+    margin-top: 4%;
     width: 100%;
 }
 
@@ -206,13 +210,13 @@ p {
     border: none;
 }
 
-.flex-outer li{
-    padding: 5%;
-}
-
 .label{
     padding-bottom: 5%;
     margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 2vw;
+    font-weight: 900;
+    color: #373867;
 }
 
 .bottom-nav{
