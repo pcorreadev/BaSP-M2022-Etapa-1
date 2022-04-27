@@ -48,16 +48,6 @@ function letterCounter(str){
 }
 
 
-function numberCounter(str) {
-    var numbersCounter = 0;
-    for (var i = 0; i < str.length; i++) { 
-        var element = str[i]
-        if (!isNaN(element[i])){
-            numbersCounter++;
-        }
-    }
-    return numbersCounter;
-}
 
 
 function nameValidation() {
@@ -86,31 +76,41 @@ function nameValidation() {
 function lastnameValidation() {
     var lastnameValue = document.getElementById('lastname2').value;
 
+    if (lastnameValue === '') {
+        validationsMessage += 'Cant be blank \n';
+        setErrorFor(lastname2, 'Cant be blank');
+        return false;
+    }
     if (letterCounter(lastnameValue) < 3 && gotNumbers(lastnameValue) == true) {
-        validationsMessage += 'Name length must be more than 3 characters \n';
-        setErrorFor(lastname2, 'Name length must be more than 3 characters \n');
+        validationsMessage += 'Last name length must be more than 3 characters \n';
+        setErrorFor(lastname2, 'Last name length must be more than 3 characters \n');
         return false;
     }
     if (gotNumbers(lastnameValue) == true) {
-        setErrorFor(lastname2, 'Name must not have numbers');
-        validationsMessage += 'Name must not have numbers';
+        setErrorFor(lastname2, 'Last name must not have numbers');
+        validationsMessage += 'Last name must not have numbers';
         return false;
     } else {
-        setSuccessFor(lastame2);
+        setSuccessFor(lastname2);
         return true;
     }
 }
 
 function documentValidation(){
-    var documentValue = document.getElementById('document2').value;
 
-    if (numbercounter(documentValue) < 7 && gotletters(documentValue) == false) {
+    var documentValue = document.getElementById('document2').value;
+    if (documentValue === '') {
+        validationsMessage += 'Cant be blank \n';
+        setErrorFor(document2, 'Cant be blank');
+        return false;
+    }
+    if (documentValue.length < 7 && gotLetters(documentValue) == false) {
         setErrorFor(document2, 'Document length must be more than 7 characters and not letters');
         validationsMessage += 'Document length must be more than 7 characters and not letters \n';
         return false;
     }
     if ((gotNumbers == true && gotLetters == true) || (gotletters == true)) {
-            setErrorFor(name2, 'Must be numbers only');
+            setErrorFor(document2, 'Must be numbers only');
             validationsMessage += 'Must be numbers only \n';
         return false;
         } else {
@@ -140,12 +140,17 @@ function dobValidation(){
 function phoneValidation(){
 
     var phoneValue = document.getElementById('phone').value;
-
-    if (numbersCounter(phoneValue).length != 10) {
+    if (phoneValue === '') {
+        validationsMessage += 'Cant be blank \n';
+        setErrorFor(phone, 'Cant be blank');
+        return false;
+    }
+    if (phoneValue.length != 10) {
         setErrorFor(phone, 'Phone length must be  10 numbers');
         validationsMessage += 'Phone length must be 10 numbers \n';
         return false;
-    } else if (gotLetters(phoneValue) == true) { 
+
+    }if (gotLetters(phoneValue) == true) { 
         setErrorFor(phone, 'Phone must be only numbers');
         validationsMessage += 'Phone must be only numbers \n';
         return false;
@@ -157,72 +162,97 @@ function phoneValidation(){
 
 function postalcodeValidation(){
 
-    var postalcodeValue = document.getElementById('postal-code').value;
-    if (postcodeValue.length === 0 ){
-        setErrorFor(postalcode, 'Cant be blank'); 
+    var postalcodeValue = document.getElementById('postalcode2').value;
+
+    if (postalcodeValue === '' ){
+        setErrorFor(postalcode2, 'Cant be blank'); 
         validationsMessage += 'Cant be blank \n';
+        return false;
     }
-    if (numbersCounter(postalcodeValue) < 4 && numbersCounter (postalcodeValue) > 5) {
-        setErrorFor(postalcode, 'Postal code must have from 4 to 5 numbers');
+    if ((gotNumbers == true && gotLetters == false) && (postalcodeValue.length > 4 && postalcodeValue.length > 5)) {
+        setErrorFor(postalcode2, 'Postal code must have from 4 to 5 numbers');
         validationsMessage += 'Postal code must have from 4 to 5 numbers \n';
         return false;
     }
-    if (gotnumbers == false) { 
-        setErrorFor(postalcode, 'Postal code must be only numbers');
+    if (gotLetters == true) { 
+        setErrorFor(postalcode2, 'Postal code must be only numbers');
         validationsMessage += 'Postal code must be only numbers \n';
         return false;
 
     } else {
-        setSuccessFor(postalcode);
+        setSuccessFor(postalcode2);
         return true
     }
 }
 
 function locationValidation(locationValue){
 
-    var locationValue = document.getElementById('location').value;
+    var locationValue = document.getElementById('location2').value;
 
-        if (gotNumbers(locationValue) && gotLetters(locationValue) == false) {
-            setErrorFor(location, 'Must have numbers and letters');
+        if (locationValue === '' ){
+            setErrorFor(location2, 'Cant be blank'); 
+            validationsMessage += 'Cant be blank \n';
+            return false;
         }
-        if (letterCounter(locationValue) < 3) {
-            setErrorFor(location, 'Must have more than 3 letters');
+        if (gotNumbers(locationValue) && gotLetters(locationValue) == false) {
+            setErrorFor(location2, 'Must have numbers and letters');
+            return false;
+        }
+        if (gotNumbers(locationValue) == false) {
+            setErrorFor(location2, 'Must have numbers');
+            return false;
+        }
+        if (letterCounter(locationValue) < 4) {
+            setErrorFor(location2, 'Must have more than 3 letters');
+            return false;
 
         } else {
-            setSuccessFor(location);
+            setSuccessFor(location2);
             return true;
         }
-    }
+}
 
 function adressValidation(){
 
-    var adressValue = document.getElementById('postal-code').value;
+    var adressValue = document.getElementById('adress').value;
 
-    if (letterCounter(adressValue).length < 5) {
-        setErrorFor(adress, 'Must be more than 5 characters');
-        validationsMessage += 'Postal code must be only numbers \n';
+    if (adressValue === '' ){
+        setErrorFor(adress, 'Cant be blank'); 
+        validationsMessage += 'Cant be blank \n';
+        return false;
     }
-    if (numberandLetter(adressValue) == true) {
+    if (letterCounter(adressValue)< 4 && letterCounter(adressValue) > 0)  {
+        setErrorFor(adress, 'Must be more than 5 letters');
+        validationsMessage += 'Must be more than 5 letters \n';
+        return false;
+    }
+    if (gotLetters || gotNumbers == false) {
         setErrorFor(adress, 'Must have numbers and letters');
-        validationsMessage += 'Postal code must be only numbers \n';
+        validationsMessage += 'Must have numbers and letters \n';
+        return false;
     }
     if (adressValue.indexOf(' ') < 2) {
         setErrorFor(adress, 'Must be a space between street and number');
-        validationsMessage += 'Postal code must be only numbers \n';
+        validationsMessage += 'Must be a space between street and number \n';
     
     } else {
-        setSuccessFor(location);
+        setSuccessFor(adress);
         return true;
     }
 }
 
 function validateEmail(){
+
     var emailValue = document.getElementById('email').value;
     var emailMatch = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
     var emailResult = emailMatch.test(emailValue);
-    var emailError = false;
+
+    if (emailValue === '') {
+        validationsMessage += 'Cant be blank \n';
+        setErrorFor(email, 'Cant be blank');
+        return false;
+    }
     if(emailResult == false){
-        emailError = 'Must be a valid email format';
         validationsMessage += 'Must be a valid email format \n';
         return setErrorFor(email, 'Must be a valid email format');
         
@@ -233,8 +263,8 @@ function validateEmail(){
 }
 
 
-function passwordfirstVal(){
-    
+function passwordfirstVal(){   
+
     var passwordValue = document.getElementById('password').value;
 
     if (passwordValue === '') {
@@ -259,14 +289,14 @@ function passwordfirstVal(){
 
 function repeatpasswordfirstVal(){
     
-    var passwordValue = document.getElementById('repeat-password').value;
+    var repeatValue = document.getElementById('repeatpassword').value;
 
-    if (passwordValue === '') {
+    if (repeatValue === '') {
         validationsMessage += 'Cant be blank \n';
         setErrorFor(repeatpassword, 'Cant be blank');
         return false;
     }
-    if (passwordValue.length < 8) {
+    if (repeatValue.length < 8) {
         setErrorFor(repeatpassword, 'Password length must be more than 8 characters');
         validationsMessage += 'Password length must be more than 8 character\n';
         return false;
@@ -284,15 +314,24 @@ function repeatpasswordfirstVal(){
 
 window.onload = function() {
 
+
+
 document.getElementById('name2').addEventListener('blur', nameValidation);
+document.getElementById('lastname2').addEventListener('blur', lastnameValidation);
+document.getElementById('document2').addEventListener('blur', documentValidation);
+document.getElementById('datebirth').addEventListener('blur', dobValidation);
+document.getElementById('phone').addEventListener('blur', phoneValidation);
+document.getElementById('postalcode2').addEventListener('blur', postalcodeValidation);
+document.getElementById('location2').addEventListener('blur', locationValidation);
+document.getElementById('adress').addEventListener('blur', adressValidation);
+document.getElementById('email').addEventListener('blur', validateEmail);
+document.getElementById('password').addEventListener('blur', passwordfirstVal);
+document.getElementById('repeatpassword').addEventListener('blur', repeatpasswordfirstVal);
 
-
-
-const element = document.getElementById("buttonsignup");
-element.addEventListener("click", function() {
-    alert (validationsMessage);;
-})
-
-// document.getElementById('document2').addEventListener('blur', documentValidation);
-// document.getElementById('datebirth').addEventListener('blur', dobValidation);
 }
+
+
+var element = document.getElementById('buttonsignup');
+element.addEventListener('click', function() {
+    alert (validationsMessage);
+})

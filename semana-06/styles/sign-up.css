@@ -59,9 +59,7 @@
     padding: 0;
     background-color: #AACE9B;
     border: none;
-    outline: none;
     border-radius: 200px;
-    overflow: hidden;
     font-size: 2vw; 
 }
 
@@ -106,3 +104,4 @@
 .validation-form.error p {
 	visibility: visible;
 }
+
