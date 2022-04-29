@@ -18,7 +18,7 @@ console.log ('Exercise 2b', count);
 //  últimos 3 caracteres  guardando el resultado en una nueva variable (utilizar substring).
 
 var phrase2C = "hola como estas";
-var count2C = phrase2C.substring(12, 15);
+var count2C = phrase2C.substring(phrase2C.length - 3);
 
 console.log ('Exercise 2c', count2C);
 

@@ -19,7 +19,7 @@ for (var i = 0; i < animals.length; i++) {
 
 var sentence = ""
 for (var i = 0; i < animals.length; i++) {
-    var sentence = animals.toString(i);
+    animals.toString(i);
     
 }
 alert (sentence);

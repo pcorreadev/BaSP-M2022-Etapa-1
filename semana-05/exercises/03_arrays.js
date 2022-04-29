@@ -5,7 +5,7 @@
 var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
  "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
-console.log ('Exercise 3a: ', months[5] + " " + months[11]);
+console.log ('Exercise 3a: ', months[4] + " " + months[10]);
 
 // 3b Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).
 
@@ -53,7 +53,7 @@ console.log ('Exercise 3f: ', meses3Fjoined);
 
 var months3G = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
  "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-var months3Gsliced = months3G .slice(4, 11);
+var months3Gsliced = months3G.slice(4, 11);
 
 console.log ('Exercise 3g: ', months3Gsliced );
 
