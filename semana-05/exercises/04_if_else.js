@@ -13,18 +13,18 @@ if (num1 >= 0.5) {
 var age = 80;
 
 if (age <= 2) {
-    alert ('Bebe');
+    alert ('Baby');
 } else if (age >= 2 && age <= 12) {
-    alert ('Niño');
+    alert ('Kid');
 } else if  (age >= 13 && age <= 19) {
-    alert ('Adolescente');
+    alert ('Teen');
 } else if  (age >= 20 && age <= 30) {
-    alert ('Joven');
+    alert ('Adolescent');
 } else if  (age >= 31 && age <= 60) {
-    alert ('Adulto')
+    alert ('Adult')
 } else if  (age >= 61 && age <= 75) {
-    alert ('Adulto mayor');
+    alert ('Older adult');
 } else {
-    alert ('Anciano');
+    alert ('Old');
 }
 

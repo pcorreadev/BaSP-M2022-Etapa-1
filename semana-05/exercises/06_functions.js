@@ -5,7 +5,7 @@ function sumSimple(num1, num2) {
     return num1 + num2;
 }
 
-var result = sumSimple(1, 2);
+var result = sumSimple(1.5, 2);
 console.log ('Exercise 6a: ', result);
 
 
@@ -48,10 +48,10 @@ console.log(sum6b(4, 6.4));
 
 function sumInteger(num1, num2) {
 
-    if (num1 % 1 === 0 || num1 % 2 === 0   ) {
+    if (num1 % 1 === 0 || num1 % 1 === 0   ) {
         return num1 + num2;
     } else {
-        alert ('float')
+        alert ('number is float')
         return (Math.round(num1 + num2)) ;    
         }
     }
@@ -62,10 +62,14 @@ console.log('Exercise 6d: ', sumInteger(231.2, 5));
 // //  que todo siga funcionando igual.
 
 function sumInteger6D(num1, num2) {
-    if (num1 % 1 === 0 || num1 % 2 === 0 ) {
-        return true;  
+
+    if (num1 % 1 === 0 || num1 % 1 === 0   ) {
+        return true;
+    } else {
+        alert ('number is float')
+        return (Math.round(num1 + num2)) ;    
         }
-}
+    }
 
 function sumSimple(num1, num2) {
 
@@ -74,5 +78,4 @@ function sumSimple(num1, num2) {
     }
 }
 
-
-console.log ('Exercise 6e: ', sumSimple(5, 7))
+console.log ('Exercise 6e: ', sumSimple(5.2, 7))
