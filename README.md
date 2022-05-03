@@ -41,7 +41,7 @@ Variables and operators, strings, arrays, if else, for, functions
 Made the site dynamic using Javascript DOM.
 Added Sign up and Login functionalities.
 
-## Week 06
+## Week 07
 
 Fetched data to server using query params. Included localstorage values
 
