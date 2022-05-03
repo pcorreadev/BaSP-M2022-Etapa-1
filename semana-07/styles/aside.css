@@ -1,0 +1,99 @@
+.body-wrapper{
+    display: flex;
+    margin: 0%;
+    justify-content: space-between
+}
+
+.main-class{
+    flex-basis: 80%;
+}
+
+.aside-class{
+    display: none;
+}
+
+.sidebar-label{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border-bottom: 2px solid #ED2626;
+    margin-left: 10%;
+}
+
+.ul-menu {
+    width: 180px;
+    margin: 10px;
+    border: none;
+}
+
+.ul-menu li {
+    padding: 25px 15px 25px 1px;
+    margin-bottom: 5px;
+    margin-left: 12px;
+    border-bottom: 1px solid #CECACA;
+}
+
+.ul-menu li a {
+    font-size: 25px;
+}
+
+.contact-us{
+    margin-top: 20%;
+}
+
+.paragraph{
+    margin-top: 20%;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.details {
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+.details p{
+    padding: 15px;
+    color: #000000;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px #01000040;
+}
+
+.contact-mail{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #CECACA; 
+}
+
+.adress{
+    margin-top: 20px;
+}
+
+.button-get-sys-info{
+    width: 90%;
+    padding: 2%, 1%, 2%, 1%;
+    margin-left: 12px;
+    background-color: #49A37B; 
+    font-size: 1.2vw;
+    border-radius: 5px;
+    color: white;
+}
+
+@media only screen and (min-width: 1024px){
+
+.aside-class{
+    flex-basis: 20%;
+    padding: 10px;
+    background: linear-gradient(180deg, rgb(80 167 128) 0%, rgb(79 167 128) 60%, rgb(255 255 255) 100%);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+}

@@ -41,6 +41,10 @@ Variables and operators, strings, arrays, if else, for, functions
 Made the site dynamic using Javascript DOM.
 Added Sign up and Login functionalities.
 
+## Week 06
+
+Fetched data to server using query params. Included localstorage values
+
 
 ![trackgenix](https://user-images.githubusercontent.com/71953662/160427119-93cd7e39-fcd9-41fa-8c1c-ee5b32c0d70d.PNG)
 
