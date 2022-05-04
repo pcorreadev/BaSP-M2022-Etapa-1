@@ -38,8 +38,8 @@
                 </div> 
             </div>
             <div class="buttons">
-                <a href ="login.html"><button class="button-login">Login</button></a>
-                <a href="signup.html"><button class="button-login">Signup</button></a>
+                <a href ="index.html"><button class="button-login">Home</button></a>
+                <a href="sign-up.html"><button class="button-login">Signup</button></a>
             </div>
             <div class="search-icon">
                 <img src="https://credicelu.net/tienda/wp-content/uploads/2019/10/lupa-blanca.png">
@@ -59,15 +59,15 @@
                 <h3 class="center-title">Login</h3>
                 <div class="form-container-50">
                     <div class="form-columns">
-                        <form id = "form">
-                            <ul class="flex-outer">
+                        <form id= "form">
+                            <ul>
                                 <li class= "validation-form">
-                                    <label class="label">Email:</label>
+                                    <label class="label" for="email">Email:</label>
                                     <input type="text" name="email" id="email" placeholder="Write your email">
                                     <p id="alert">error</p>
                                 </li>
                                 <div class= "validation-form">
-                                    <label class="label">Password:</label>
+                                    <label class="label" for="password">Password:</label>
                                     <input type="text" name="password" id="password" placeholder="Write your password">
                                     <p>error</p>
                                 </div>
@@ -83,11 +83,8 @@
                             </ul>
                         </form>
                     </div>
-                    <div class="center">
-                        <a><button type="submit" id="buttonlogin">
-                            <span class="button-text">Login</span>
-                        </button>
-                        </a>
+                    <div>
+                        <a href ="index.html"><button type="button" id="buttonlogin">Login</button></a>
                     </div>
             </section>
         </main>

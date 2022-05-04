@@ -23,7 +23,7 @@
 
 .flex-outer{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 .list-flex{
     display: flex;
@@ -55,22 +55,35 @@
 
 .button {
     display: flex;
-    height: 50px;
+    height: 100%;
     padding: 0;
     background-color: #AACE9B;
     border: none;
     border-radius: 200px;
     font-size: 2vw; 
+
 }
 
-.button-text{
-  justify-content: center;
-  padding: 0 50px;
-  color: #505168;
-  height: 100%;
-  font-weight: 900;
-  text-align: center;
+#buttonsignup{
+    display: flex;
+    background-color: #AACE9B;
+    font-size: 2vw;
+    border-radius: 200px;
+    border: none;
+    width: 20%;
+    justify-content: center;
 }
+
+#buttonlogin{
+    display: flex;
+    background-color: #AACE9B;
+    font-size: 2vw;
+    border-radius: 200px;
+    border: none;
+    width: 20%;
+    justify-content: center;
+}
+
 
   
 .validation-form {

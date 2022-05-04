@@ -39,7 +39,7 @@
             </div>
             <div class="buttons">
                 <a href ="login.html"><button class="button-login">Login</button></a>
-                <a href="signup.html"><button class="button-login">Signup</button></a>
+                <a href="index.html"><button class="button-login">Home</button></a>
             </div>
             <div class="search-icon">
                 <img src="https://credicelu.net/tienda/wp-content/uploads/2019/10/lupa-blanca.png">
@@ -57,70 +57,71 @@
             </div>
             <section class="submit-container">
                 <h3 class="center-title">Signup</h3>
-                        <form class="form" action="submit.php" method="post">
-                            <ul class="flex-outer">
-                                <div class="form-columns">
-                                    <li class= "validation-form">
-                                        <label class="label">Name:</label>
-                                        <input type="text" id="name2" placeholder="Write your name">
-                                        <p>error</p>
-                                    <li class= "validation-form">
-                                        <label class="label">Last name:</label>
-                                        <input type="text" id="lastname2" placeholder="Write your last name">
-                                        <p>error</p>
-                                    </li>
-                                    <li class= "validation-form">
-                                        <label class="label">Date of birth:</label>
-                                        <input type="text" id="datebirth" max="" placeholder="Write your date of birth">
-                                        <p>error</p>
-                                    </li>
-                                    </li>
-                                    <li class= "validation-form">
-                                        <label class="label">Document:</label>
-                                        <input type="text" id="document2" name="document2"  placeholder="Write your document">
-                                        <p>error</p>
-                                    </li>
-                                    <li class= "validation-form">
-                                        <label class="label">Phone number:</label>
-                                        <input type="text" id= "phone" placeholder="Write your phone number" >
-                                        <p>error</p>
-                                    </li>
+                        <form>
+                            <ul>
+                                <div class="flex-outer">
+                                    <div class= "form-columns">
+                                        <li class= "validation-form">
+                                            <label class="label" for="name2">Name:</label>
+                                            <input type="text" id="name2" placeholder="Write your name">
+                                            <p>error</p>
+                                        <li class= "validation-form">
+                                            <label class="label" for="lastname2">Last name:</label>
+                                            <input type="text" id="lastname2" placeholder="Write your last name">
+                                            <p>error</p>
+                                        </li>
+                                        <li class= "validation-form">
+                                            <label class="label" for="datebirth">Date of birth:</label>
+                                            <input type="text" id="datebirth" max="" placeholder="Write your date of birth">
+                                            <p>error</p>
+                                        </li>
+                                        </li>
+                                        <li class= "validation-form">
+                                            <label class="label" for="document2">Document:</label>
+                                            <input type="text" id="document2" name="document2"  placeholder="Write your document">
+                                            <p>error</p>
+                                        </li>
+                                        <li class= "validation-form">
+                                            <label class="label" for="phone">Phone number:</label>
+                                            <input type="text" id= "phone" placeholder="Write your phone number" >
+                                            <p>error</p>
+                                        </li>
+                                    </div>
+                                    <div class="form-columns">
+                                        <li class= "validation-form">
+                                            <label class="label" for="address">Address:</label>
+                                            <input type= "email" id= "address" placeholder="Write your address">
+                                            <p>error</p>
+                                        </li>
+                                        <li class= "validation-form">
+                                            <label class="label" for="location2">Location:</label>
+                                            <input type="text" id= "location2" placeholder="Write your location">
+                                            <p>error</p>
+                                        </li>
+                                        <li class= "validation-form">
+                                            <label class="label" for="postacode2">Postal code:</label>
+                                            <input type="text" id= "postalcode2" placeholder="Write your postal code">
+                                            <p>error</p>
+                                        </li>
+                                        <li class= "validation-form">
+                                            <label class="label" for="email">Email:</label>
+                                            <input type="text" name="email" id="email" placeholder="Write your email">
+                                            <p>error</p>
+                                        <li class= "validation-form">
+                                            <label class="label" for="password">Password:</label>
+                                            <input type="text" id= "password" placeholder="Write your password">
+                                            <p>error</p>
+                                        </li>
+                                        <li class= "validation-form">
+                                            <label class="label" for="repeatpassword">Repeat password:</label>
+                                            <input type="text" id= "repeatpassword" placeholder="Write your password">
+                                            <p>error</p>
+                                        </li>
+                                    </div>
                                 </div>
-                                <div class="form-columns">
-                                    <li class= "validation-form">
-                                        <label class="label">Address:</label>
-                                        <input type="email" id= "address" placeholder="Write your address">
-                                        <p>error</p>
-                                    </li>
-                                    <li class= "validation-form">
-                                        <label class="label">Location:</label>
-                                        <input type="text" id= "location2" placeholder="Write your location">
-                                        <p>error</p>
-                                    </li>
-                                    <li class= "validation-form">
-                                        <label class="label">Postal code:</label>
-                                        <input type="text" id= "postalcode2" placeholder="Write your postal code">
-                                        <p>error</p>
-                                    </li>
-                                    <li class= "validation-form">
-                                        <label class="label">Email:</label>
-                                        <input type="text" name="email" id="email" placeholder="Write your email">
-                                        <p>error</p>
-                                    <li class= "validation-form">
-                                        <label class="label">Password:</label>
-                                        <input type="text" id= "password" placeholder="Write your password">
-                                        <p>error</p>
-                                    </li>
-                                    <li class= "validation-form">
-                                        <label class="label">Repeat password:</label>
-                                        <input type="text" id= "repeatpassword" placeholder="Write your password">
-                                        <p>error</p>
-                                    </li>
+                                <div>
+                                    <a href ="signup.html"><button type="button" id="buttonsignup">Create</button></a>
                                 </div>
-                                <a href="signup.html"><button type="button" id="buttonsignup">
-                                    <span class="button-text">Create</span>
-                                </button>
-                                </a>
                             </ul>
                         </form>
                     </div>

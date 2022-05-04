@@ -118,24 +118,46 @@ function dobValidation() {
 
     var dobValue =document.getElementById('datebirth').value;
 
-    var yearsSubstring = dobValue.substring (6,10);
-    var monthsSubstring = dobValue.substring (0,2)
+    var yearsSubstring = dobValue.substring (6, 10);
+    var monthsSubstring = dobValue.substring (0, 1)
+    var daysSubstring = dobValue.substring (3, 4)
 
     if (monthsSubstring > 12  ){
         setErrorFor(datebirth, 'Date must be this format MM/DD/YYYY');
         validationsMessage += 'Date must be this format MM/DD/YYYY \n';
         return false;
     }
+    if (dobValue.indexOf ('/') !== 2 && dobValue.indexOf ('/') !== 5){
+        setErrorFor(datebirth, 'Date must be this format MM/DD/YYYY');
+        validationsMessage += 'Date must be this format MM/DD/YYYY \n';
+        return false;
+    }
+    if (monthsSubstring > 12  ){
+        setErrorFor(datebirth, 'Months must be less than 12');
+        validationsMessage += 'Months must be less than 12Y \n';
+        return false;
+    }
     if (yearsSubstring > 2006 ){
         setErrorFor(datebirth, 'Must be older than 16');
         validationsMessage += 'Must be older than 16 \n';
         return false;
+    }
+    if (dobValue === ''){
+        setErrorFor(datebirth, 'Cant be blank');
+        validationsMessage += 'Cant be blank \n';
+        return false;
     
+    }if (gotLetters(yearsSubstring || monthsSubstring || daysSubstring) == true) { 
+        setErrorFor(datebirth, 'Must be only numbers');
+        validationsMessage += 'Must be only numbers \n';
+        return false;
+
     } else {
         setSuccessFor(datebirth);
         return true;
     }
 }
+
 
 function phoneValidation(){
 
@@ -296,20 +318,15 @@ function repeatpasswordfirstVal(){
         setErrorFor(repeatpassword, 'Cant be blank');
         return false;
     }
-    if (repeatValue.length < 8) {
-        setErrorFor(repeatpassword, 'Password length must be more than 8 characters');
-        validationsMessage += 'Password length must be more than 8 character\n';
-        return false;
-    }
-    if ( gotLetters(repeatValue) == false) { 
-        setErrorFor(repeatpassword, 'Password must have letters');
-        validationsMessage += 'Password must have letters \n';
-        return false;
-    } else {
+    if (repeatValue == password.value){
         setSuccessFor(repeatpassword);
-        return true
+        return true;
+    } else {
+        setErrorFor(repeatpassword, 'Please write the same password again');
+        return false
     } 
 }
+
 
 function completeValidations(){
     return  nameValidation(name2.value) &&
@@ -321,12 +338,16 @@ function completeValidations(){
      repeatpasswordfirstVal(repeatpassword.value)
   }
 
-function signupAlert(event) {
-alert (validationsMessage);
-event.preventDefault();
-submitInfo();
-}
+function signupAlert(element) {
+    if (validationsMessage === ''){
+        element.preventDefault();
+        submitInfo();
 
+    } else { (alert (validationsMessage));
+
+    }
+
+}
 
 function submitInfo(){
     if(completeValidations()) {
@@ -349,10 +370,10 @@ function submitInfo(){
         .then(function (data) {
         console.log(data);
         var success = data.msg + '\n';
-        alert(success);
         saveStorage();
+        alert(success);
         })
-        .catch(function(error){
+        .catch(function (error){
         alert(error.msg);
         });
     } else {
@@ -362,7 +383,6 @@ function submitInfo(){
 
 
 function saveStorage(){
- if (submitInfo()) {
         localStorage.setItem('name2', name2.value);
         localStorage.setItem('lastname2', lastname2.value);
         localStorage.setItem('document2', document2.value);
@@ -374,19 +394,24 @@ function saveStorage(){
         localStorage.setItem('email', email.value);
         localStorage.setItem('password', password.value);
         localStorage.setItem('repeatpassword', repeatpassword.value);
-     }
 }
 
 
+
 function readlocalStorage() {
-    // if (localStorage.name2 && localStorage.lastName2 && localStorage.document2 && localStorage.phone && localStorage.datebirth
-    //     && localStorage.postalcode2 && localStorage.location2 && localStorage.address && localStorage.email && localStorage.password
-    //     && localStorage.repeatPassword) {
-        name2.value = localStorage.getItem('name2')
+    name2.value = localStorage.getItem('name2');
+    lastname2.value = localStorage.getItem('lastname2');
+    document2.value = localStorage.getItem('document2');
+    phone.value = localStorage.getItem('phone');
+    datebirth.value = localStorage.getItem('datebirth');
+    postalcode2.value = localStorage.getItem('postalcode2.value');
+    location2.value = localStorage.getItem('location2.value');
+    address.value = localStorage.getItem('address');
+    email.value = localStorage.getItem('email');
+    password.value = localStorage.getItem('password');
+    repeatpassword.value = localStorage.getItem('repeatpassword');
 
-    }
-
-
+}
 
 
 var element = document.getElementById('buttonsignup');
@@ -414,8 +439,3 @@ document.getElementById('repeatpassword').addEventListener('blur', repeatpasswor
 
 }
 
-
-// var element = document.getElementById('buttonsignup');
-// element.addEventListener('click', function() {
-//     alert (validationsMessage);
-// })
